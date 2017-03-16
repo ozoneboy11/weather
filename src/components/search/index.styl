@@ -1,0 +1,159 @@
+.searchArea {
+  margin-top: 5px;
+  padding: 0px;
+  .containerHeader {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #555;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px 4px 0px 0px;
+  }
+  .container {
+    position: relative;
+    height: 300px;
+    border-width: 1px;
+    border-color: #eee;
+    border-style: none solid solid solid;
+    border-radius: 0px 0px 4px 4px;
+    font-size: 12px;
+    color: #555555;
+    padding-top: 10px;
+  }
+}
+.box {
+  height: 50px;
+  position: relative;
+  display: flex;
+}
+.actionBox {
+  display: inline-box;
+  width: 200px;
+  height: 20px;
+}
+.buttonArea {
+  position: absolute;
+  bottom: 2px;
+  height: 50px;
+  display: flex;
+}
+.searchBtn {
+  width: 96px;
+  height: 42px;
+  position: relative;
+}
+.searchBtnLabel {
+  position: absolute;
+  top: 15px;
+  left: 6px;
+}
+#glass {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+#pointer {
+  position: relative;
+  top: 2px;
+  left: -2px;
+}
+.icon {
+  fill: #4B4B4B;
+}
+.run {
+  font-size: 24px;
+  font-weight: 600;
+  width: 76px;
+  left: 198px;
+}
+.campaignId, .adGroupId, .advertiserId {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  left: 186px;
+}
+.id {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 4px;
+  left: 292px;
+  padding: 0;
+}
+.select-label {
+  width: 247px;
+  height: 18px;
+  position: absolute;
+  top: 6px;
+  left: 86px;
+  color: #555;
+  border: 1px solid rgba(200,200,200,0.4);
+  border-radius: 3px;
+  padding: 7px 3px 7px 10px;
+  overflow: hidden;
+  color: inherit;
+  text-align: left;
+  background-color: #fff;
+}
+.select-btn {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  left: 348px;
+  color: #555;
+  z-index: 100;
+}
+.select-btn:after {
+  display: inline-block;
+  position: relative;
+  left: 2px;
+  width: 0;
+  height: 0;
+  vertical-align: -2px;
+  content: "";
+  border: 4px solid;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  z-index: 100;
+}
+.select-menu-modal {
+  position: absolute;
+  left: 46px;
+  top: 29px;
+  width: 300px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  font-size: 12px;
+  color: #666;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(200,200,200,0.4);
+  border-radius: 3px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+.select-menu-item {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 10px;
+  overflow: hidden;
+  color: inherit;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  background-color: #fff;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+.select-menu-item:hover {
+  color: #fff;
+  background-color: #4078c0;
+}
