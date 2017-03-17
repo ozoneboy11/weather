@@ -68,3 +68,29 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+
+.modal-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(225, 225, 225, 0.5);
+  & .shindow {
+    width: 166px;
+    height: 207px;
+    background-image: url("images/masuzoe.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    animation: rotate 2s linear infinite;
+  }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(-0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -3,9 +3,11 @@
   .container
     .header
       .date 日時
-      .param 操作
+      .param 操作履歴
       .user ユーザー
     .record(v-for="record in resultData")
       .date {{ getDate(record._source['@timestamp']) }}
-      .param {{ getParams(record) }}
-      .user {{ record._source.fields.user_id }}
+      .paramBox
+        //- .param {{ getMonthlyBudget(record) }}
+        //- .param {{ getDailyBudget(record) }}
+      .user {{ getUserName(record._source.fields.user_id) }}

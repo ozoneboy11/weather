@@ -14,8 +14,6 @@
     border-radius: 4px 4px 0px 0px;
   }
   .container {
-    position: relative;
-    height: 190px;
     border-width: 1px;
     border-color: #eee;
     border-style: none solid solid solid;
@@ -23,6 +21,7 @@
     font-size: 12px;
     color: #555555;
     padding-top: 10px;
+    padding-bottom: 10px;
   }
   .header {
     display: flex;
@@ -42,12 +41,24 @@
     }
   }
   .date {
-    width: 110px;
+    width: 130px;
     word-wrap: break-word;
+    padding-left:20px;
   }
-  .param {
-    width: 152px;
+  .paramBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .param {
+    width: 260px;
     word-wrap: break-word;
+    text-align: center;
+  }
+  .record .param {
+    width: 220px;
+    word-wrap: break-word;
+    text-align: left;
+    padding: 0px 20px;
   }
   .user {
     width: 92px;

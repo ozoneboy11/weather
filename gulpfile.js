@@ -43,7 +43,7 @@ gulp.task('views', () => {
 // images
 gulp.task('images', () => {
   console.info('gulp:images');
-  return gulp.src('./src/images/**/*.gif')
+  return gulp.src(['./src/images/**/*.gif', './src/images/**/*.png'])
     .pipe(gulp.dest('./dist/images'));
 });
 
